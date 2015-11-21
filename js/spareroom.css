@@ -35,12 +35,6 @@ div.tooltip p {
 }
 
 
-body {
-  max-width: 40em;
-  margin-left:auto;
-  margin-right:auto;
-  background: white;
-}
 
 div.areaname
 {
@@ -67,7 +61,7 @@ padding-top: 0px
 
 .land
     {
-        fill: black;
+        fill: white;
         stroke: gray;
         stroke-width: 0.5;
         stroke-miterlimit: 4;
