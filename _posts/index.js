@@ -1,6 +1,10 @@
 var tooltip = d3.selectAll(".tooltip:not(.css)");
 var HTMLmouseTip = d3.select("div.tooltip.mouse");
 
+var json;
+$.getJSON("http://antakasa.github.io/ddj_antti/js/data.json", function(myjson){
+    json = myjson; 
+});
 
 /* If this seems like a lot of different variables,
    remember that normally you'd only implement one 
