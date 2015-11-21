@@ -2309,7 +2309,7 @@ function price() {
         for (var i = 0; i < json.length; i++) {
             var obj = json[i];
             var country = svgDocument.getElementById(obj.AREACODE);
-            var median_price = parseInt(obj.MEDIAN_PRICE)
+            var median_price = parseInt(obj.MEDIAN_PRICE);
             if (median_price <= 650) {
                 var newClass = ' colour' + 0;
                 } else if (median_price <= 800  && median_price > 650){
@@ -2327,7 +2327,7 @@ function difference() {
         for (var i = 0; i < json.length; i++) {
         var obj = json[i];
         var country = svgDocument.getElementById(obj.AREACODE);
-        var difference = parseInt(obj.FLATMATE_MEDIAN_BUDGET) -  parseInt(obj.MEDIAN_PRICE)  
+        var difference = parseInt(obj.FLATMATE_MEDIAN_BUDGET) -  parseInt(obj.MEDIAN_PRICE);  
         if (difference >= 0) {
             var newClass = ' colour' + 0;
         } else if (difference < 0  && difference >= -90) {
@@ -2345,7 +2345,7 @@ function rooms() {
         for (var i = 0; i < json.length; i++) {
         var obj = json[i];
         var country = svgDocument.getElementById(obj.AREACODE);
-        var rooms = parseInt(obj.ROOMS)  
+        var rooms = parseInt(obj.ROOMS);  
         if (rooms <= 50) {
             var newClass = ' colour' + 0;
         } else if (rooms <= 97  && rooms > 50) {
@@ -2363,7 +2363,7 @@ function flatmates() {
           for (var i = 0; i < json.length; i++) {
         var obj = json[i];
         var country = svgDocument.getElementById(obj.AREACODE);
-        var flatmates = parseInt(obj.FLATMATE_ADS)
+        var flatmates = parseInt(obj.FLATMATE_ADS);
         if (flatmates <= 1500) {
             var newClass = ' colour' + 0;
         } else if (flatmates <= 5375.5  && flatmates > 1500){
@@ -2378,15 +2378,15 @@ function flatmates() {
   };      
 
     ]]>
-i = 1
+i = 1;
 var main = function() {
 
     $('#button').click(function() {
     if (i == 4) {
-        i = 0
+        i = 0;
     }
-    i = i +1
-    init(null, i) 
+    i = i +1;
+    init(null, i); 
     });
 };
     
@@ -2786,31 +2786,24 @@ var HTMLmouseTip = d3.select("div.tooltip.mouse");
 /* I'm using d3 to add the event handlers to the area
    and set positioning attributes on the tooltips, but
    you could use JQuery or plain Javascript. */
-var area = d3.select("svg").select("g").selectAll("path")
+var area = d3.select("svg").select("g").selectAll("path");
 area.on("mouseover", function () {
         $('.tooltip').css('display','initial');
         tooltip.style("opacity", "1"); 
         var t = d3.select(this).attr("id");
         for (var i = 0; i < json.length; i++) {
-            var obj = json[i]
+            var obj = json[i];
             if (obj.AREACODE == t) {
-                d3.select("div.areaname").html(obj.AREA + " " + "(" + obj.POSTCODE + ")")
-                d3.select("div.rooms").html(obj.ROOMS)
-                d3.select("div.flatmate_median_budget").html(obj.FLATMATE_MEDIAN_BUDGET)
-                d3.select("div.flatmate_ads").html(obj.FLATMATE_ADS)
-                d3.select("div.median_price").html(obj.MEDIAN_PRICE)  
-                d3.select("div.price_budget").html(obj.PRICE_BUDGET)  
+                d3.select("div.areaname").html(obj.AREA + " " + "(" + obj.POSTCODE + ")");
+                d3.select("div.rooms").html(obj.ROOMS);
+                d3.select("div.flatmate_median_budget").html(obj.FLATMATE_MEDIAN_BUDGET);
+                d3.select("div.flatmate_ads").html(obj.FLATMATE_ADS);
+                d3.select("div.median_price").html(obj.MEDIAN_PRICE); 
+                d3.select("div.price_budget").html(obj.PRICE_BUDGET); 
             } else {  
-                continue
-        }}
-     
-    })
-    .on("mousemove", function () {        
-        /***** For an HTML tooltip *****/ 
-      
-        //mouse coordinates relative to the page as a whole
-        //can be accessed directly from the click event object
-        //(which d3 stores as d3.event)
+                continue;
+        }} });
+area.on("mousemove", function () {        
         HTMLmouseTip
             .style("left", Math.max(0, d3.event.pageX - 150) + "px")
             .style("top", (d3.event.pageY + 20) + "px")
