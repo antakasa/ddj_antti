@@ -1,4 +1,4 @@
-sitemap: /ddj_antti/sitemap.xml
+sitemap: /dj_city/sitemap.xml
 
 user-agent: EmailCollector
 disallow: /
