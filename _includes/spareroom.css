@@ -17,6 +17,7 @@ div.rooms, div.flatmate_median_budget, div.flatmate_ads, div.median_price, div.p
     padding-bottom: 1em
 }
 div.tooltip {
+    display: none;
     padding: 5px;
     background: white;
     border:solid 0.0px gray;
