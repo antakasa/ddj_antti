@@ -8,12 +8,21 @@ div.rooms, div.flatmate_median_budget, div.flatmate_ads, div.median_price, div.p
     display: inline;
     font-weight: bold;
 }
+svg {
+  width: 100%;
+  padding-bottom: 99.99%; 
+  height: 1px; 
+  overflow: visible; 
+  box-sizing: content-box; 
+  enable-background:new 0 0 381.1 381.1
+}
 
 .mapview {
     font-size: 1.5em;
 }
 .container{
     text-align: center;
+    padding-top: 46%;
     padding-bottom: 1em
 }
 div.tooltip {
@@ -35,6 +44,12 @@ div.tooltip p {
 }
 
 
+body {
+  max-width: 40em;
+  margin-left:auto;
+  margin-right:auto;
+  background: white;
+}
 
 div.areaname
 {
@@ -61,7 +76,7 @@ padding-top: 0px
 
 .land
     {
-        fill: white;
+        fill: black;
         stroke: gray;
         stroke-width: 0.5;
         stroke-miterlimit: 4;
