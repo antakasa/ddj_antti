@@ -8,7 +8,11 @@ div.rooms, div.flatmate_median_budget, div.flatmate_ads, div.median_price, div.p
     display: inline;
     font-weight: bold;
 }
-
+svg {
+    width: 100%; 
+    padding-bottom: 99.99%; 
+    height: 1px   
+}
 .mapview {
     font-size: 1.5em;
 }
