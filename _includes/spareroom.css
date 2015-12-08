@@ -97,17 +97,17 @@ padding-top: 0px
 
 
 .button {
-    background-color:#ffffff;
+    background-color:#dcdcdc;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
-    border-radius:6px;
+    border-radius: 6px;
     border:1px solid #dcdcdc;
     display:inline-block;
     cursor:pointer;
     color:#000000;
     font-family:Arial;
-    font-size:25px;
-    padding:6px 24px;
+    font-size: 25px;
+    padding: 6px 24px;
     margin-bottom: 1em;
     text-decoration:none;
 }
