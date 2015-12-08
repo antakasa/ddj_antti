@@ -1,5 +1,7 @@
-
-<link rel="stylesheet" href="http://antakasa.github.io/dj_city/js/spareroom.css">
+---
+title: Download this Theme
+updated: 2015-09-09 10:38
+---
 <div class="container">
  <button type="button" class="button" id ="button">Change map view</button>  
  <div class="mapview">The median budgets of room seekers vs. the median prices of the offered rooms.</div></div>
@@ -2280,10 +2282,6 @@ var json = [ {
     <script type="text/javascript">
      <![CDATA[
 
-var json;
-$.getJSON("{{site.baseurl}}/js/data.json", function(myjson){
-    json = myjson;
-});
 
 
 function init(evt, command) {
@@ -2293,8 +2291,7 @@ function init(evt, command) {
         if (command == 1) {
             $('.mapview').html("Median room price by post district");
             price();
-        } else
-         if (command == 2) {
+        } else if (command == 2) {
                 $('.mapview').html("Available rooms by post district");
                 rooms();
         } else if (command == 3) {
@@ -2312,7 +2309,7 @@ function price() {
         for (var i = 0; i < json.length; i++) {
             var obj = json[i];
             var country = svgDocument.getElementById(obj.AREACODE);
-            var median_price = parseInt(obj.MEDIAN_PRICE)
+            var median_price = parseInt(obj.MEDIAN_PRICE);
             if (median_price <= 650) {
                 var newClass = ' colour' + 0;
                 } else if (median_price <= 800  && median_price > 650){
@@ -2330,7 +2327,7 @@ function difference() {
         for (var i = 0; i < json.length; i++) {
         var obj = json[i];
         var country = svgDocument.getElementById(obj.AREACODE);
-        var difference = parseInt(obj.FLATMATE_MEDIAN_BUDGET) -  parseInt(obj.MEDIAN_PRICE)  
+        var difference = parseInt(obj.FLATMATE_MEDIAN_BUDGET) -  parseInt(obj.MEDIAN_PRICE);  
         if (difference >= 0) {
             var newClass = ' colour' + 0;
         } else if (difference < 0  && difference >= -90) {
@@ -2348,7 +2345,7 @@ function rooms() {
         for (var i = 0; i < json.length; i++) {
         var obj = json[i];
         var country = svgDocument.getElementById(obj.AREACODE);
-        var rooms = parseInt(obj.ROOMS)  
+        var rooms = parseInt(obj.ROOMS);  
         if (rooms <= 50) {
             var newClass = ' colour' + 0;
         } else if (rooms <= 97  && rooms > 50) {
@@ -2366,7 +2363,7 @@ function flatmates() {
           for (var i = 0; i < json.length; i++) {
         var obj = json[i];
         var country = svgDocument.getElementById(obj.AREACODE);
-        var flatmates = parseInt(obj.FLATMATE_ADS)
+        var flatmates = parseInt(obj.FLATMATE_ADS);
         if (flatmates <= 1500) {
             var newClass = ' colour' + 0;
         } else if (flatmates <= 5375.5  && flatmates > 1500){
@@ -2381,19 +2378,23 @@ function flatmates() {
   };      
 
     ]]>
-i = 1
+i = 1;
 var main = function() {
+
     $('#button').click(function() {
     if (i == 4) {
-        i = 0
+        i = 0;
     }
-    i = i +1
-    init(null, i) 
+    i = i +1;
+    init(null, i); 
     });
 };
     
 $(document).ready(main);
-        
+$(document).ready(function() {
+    $('#button').click();
+});
+
        </script>
        
        <!-- The SVG is from Wikipedia, creative commons-->
@@ -2787,7 +2788,7 @@ var HTMLmouseTip = d3.select("div.tooltip.mouse");
    you could use JQuery or plain Javascript. */
 var area = d3.select("svg").select("g").selectAll("path");
 area.on("mouseover", function () {
-        $('.tooltip').css('display','inline');
+        $('.tooltip').css('display','initial');
         tooltip.style("opacity", "1"); 
         var t = d3.select(this).attr("id");
         for (var i = 0; i < json.length; i++) {
@@ -2813,5 +2814,3 @@ area.on("mousemove", function () {
     });
 
         </script>
-</div>
-
