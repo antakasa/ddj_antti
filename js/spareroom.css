@@ -98,12 +98,12 @@ padding-top: 0px
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
     border-radius:6px;
-    border:0.5px solid #dcdcdc;
+    border:2px solid #dcdcdc;
     display:inline-block;
     cursor:pointer;
     color:#000000;
     font-family:Arial;
-    font-size:15px;
+    font-size: 25px;
     padding:6px 24px;
     margin-bottom: 1em;
     text-decoration:none;
