@@ -92,13 +92,13 @@ padding-top: 0px
         
 
 
-.button {
+.button_view {
     background-color:#ffffff;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
-    border-radius:6px;
+    border-radius: 6px;
     border:0.5px solid #dcdcdc;
-    display:inline-block;
+    display: inline-block;
     cursor:pointer;
     color:#000000;
     font-family:Arial;
@@ -107,10 +107,10 @@ padding-top: 0px
     margin-bottom: 1em;
     text-decoration:none;
 }
-.button:hover {
+.button_view:hover {
     background-color:#f6f6f6;
 }
-.button:active {
+.button_view:active {
     position:relative;
     top:1px;
 }
