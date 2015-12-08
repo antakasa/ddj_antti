@@ -10,13 +10,9 @@ div.rooms, div.flatmate_median_budget, div.flatmate_ads, div.median_price, div.p
 }
 
 svg {
-  width: 100%;
-  padding-bottom: 99.99%; 
-  height: 1px; 
-  overflow: visible; 
-  box-sizing: content-box; 
-  enable-background:new 0 0 381.1 381.1
-}
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .mapview {
@@ -97,17 +93,17 @@ padding-top: 0px
 
 
 .button {
-    background-color:#dcdcdc;
+    background-color:#ffffff;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
-    border-radius: 6px;
-    border:1px solid #dcdcdc;
+    border-radius:6px;
+    border:0.5px solid #dcdcdc;
     display:inline-block;
     cursor:pointer;
     color:#000000;
     font-family:Arial;
-    font-size: 25px;
-    padding: 6px 24px;
+    font-size:15px;
+    padding:6px 24px;
     margin-bottom: 1em;
     text-decoration:none;
 }
