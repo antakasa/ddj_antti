@@ -1,7 +1,10 @@
-<link rel="stylesheet" href="http://antakasa.github.io/ddj_antti/js/spareroom.css">
+---
+title: Download this Theme
+updated: 2015-09-09 10:38
+---
 <div class="container">
  <button type="button" class="button" id ="button">Change map view</button>  
- <div class="mapview">The median budgets of room seekers vs. the median prices of the offered rooms.</div>
+ <div class="mapview">The median budgets of room seekers vs. the median prices of the offered rooms.</div></div>
     <div class="mouse tooltip">
     <div class="areaname"></div>
 <p><b> <div class="rooms"></div></b> free rooms.</p><p><b><div class="flatmate_ads"></div></b> potential flatsharers showed interest in living here.</br></p>
@@ -2273,7 +2276,7 @@ var json = [ {
         "PRICE_BUDGET": "-28"
     }]; </script>
 
-<svg viewbox="0 0 942.93903 871.48495" 
+<svg viewbox="0 0 942.93903 871.48495"
     xmlns="http://www.w3.org/2000/svg" onload="init(evt,1)">
   
     <script type="text/javascript">
@@ -2785,7 +2788,7 @@ var HTMLmouseTip = d3.select("div.tooltip.mouse");
    you could use JQuery or plain Javascript. */
 var area = d3.select("svg").select("g").selectAll("path");
 area.on("mouseover", function () {
-        $('.tooltip').css('display','inline');
+        $('.tooltip').css('display','initial');
         tooltip.style("opacity", "1"); 
         var t = d3.select(this).attr("id");
         for (var i = 0; i < json.length; i++) {
@@ -2811,6 +2814,3 @@ area.on("mousemove", function () {
     });
 
         </script>
-</div>
-
-

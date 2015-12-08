@@ -117,7 +117,7 @@ span[data-note] {
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: bounce;
   a {
-    background: #FFF ;
+    background: #ddd url("gravatar_wrapper.png");
     color: #000;
     text-decoration: none;
     font-weight: 700;
@@ -142,7 +142,7 @@ span[data-note] {
       margin-top: 5px;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
-      border-radius: 40%;
+      border-radius: 50%;
     }
     @media (max-width : 480px) {&:hover + .logo-prompt,
       &:focus + .logo-prompt {
