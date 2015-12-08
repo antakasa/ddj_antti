@@ -1,3 +1,19 @@
+Skip to content
+This repository  
+Search
+Pull requests
+Issues
+Gist
+ @antakasa
+ Unwatch 1
+  Star 0
+  Fork 0 antakasa/dj_city
+ Code  Pull requests 0  Pulse  Graphs  Settings
+Tree: 610e3fe5da Find file Copy pathdj_city/_includes/spareroom.css
+610e3fe  12 days ago
+@antakasa antakasa ddd
+1 contributor
+RawBlameHistory     117 lines (103 sloc)  2 KB
 .tooltip {
     pointer-events:none; /*let mouse events pass through*/
     transition: opacity 0s;
@@ -90,36 +106,29 @@ padding-top: 0px
         opacity: 0.3;
     }
         
-.button_view {
-   border-top: 1px solid #57bfff;
-   background: #337bab;
-   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#337bab));
-   background: -webkit-linear-gradient(top, #3e779d, #337bab);
-   background: -moz-linear-gradient(top, #3e779d, #337bab);
-   background: -ms-linear-gradient(top, #3e779d, #337bab);
-   background: -o-linear-gradient(top, #3e779d, #337bab);
-   padding: 5px 10px;
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 25px;
-   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.button_view:hover {
-   border-top-color: #28597a;
-   background: #28597a;
-   color: #ccc;
-   }
-.button_view:active {
-   border-top-color: #1b435e;
-   background: #1b435e;
-   }
 
+
+.button {
+    background-color:#ffffff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:0.5px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:15px;
+    padding:6px 24px;
+    margin-bottom: 1em;
+    text-decoration:none;
 }
+.button:hover {
+    background-color:#f6f6f6;
+}
+.button:active {
+    position:relative;
+    top:1px;
+}
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security Contact Help
