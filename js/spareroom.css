@@ -94,14 +94,14 @@ padding-top: 0px
 
 
 .button {
-    background-color:#ffffff;
+    background-color: #0570b0;
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
     border-radius:6px;
-    border:1px solid #0570b0;
+    border:1px solid #DCDCDC;
     display:inline-block;
     cursor:pointer;
-    color:#000000;
+    color:#FFFFFF;
     font-family:Arial;
     font-size: 20px;
     padding:6px 24px;
