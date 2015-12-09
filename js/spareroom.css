@@ -110,6 +110,7 @@ padding-top: 0px
 }
 .button:hover {
     background-color:#f6f6f6;
+    color:#000000;
 }
 .button:active {
     position:relative;
