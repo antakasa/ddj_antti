@@ -14,7 +14,8 @@ svg {
   padding-bottom: 99.99%; 
   height: 1px; 
   overflow: visible; 
-
+  box-sizing: content-box; 
+  enable-background:new 0 0 381.1 381.1
 }
 
 .mapview {
