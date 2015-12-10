@@ -22,6 +22,7 @@ div.rooms, div.flatmate_median_budget, div.flatmate_ads, div.median_price, div.p
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+svg {
   width: 100%;
   padding-bottom: 99.99%; 
   height: 1px; 
@@ -29,14 +30,17 @@ div.rooms, div.flatmate_median_budget, div.flatmate_ads, div.median_price, div.p
   box-sizing: content-box; 
   enable-background:new 0 0 381.1 381.1
 }
+}
 
 _:-ms-fullscreen, :root .ie11up { 
+svg {
   width: 100%;
   padding-bottom: 99.99%; 
   height: 1px; 
   overflow: visible; 
   box-sizing: content-box; 
   enable-background:new 0 0 381.1 381.1
+}
 }
 
 .mapview {
