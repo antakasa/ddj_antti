@@ -6,8 +6,16 @@ layout: default
 	<ul>
 
 		{% for post in site.posts %}
-
+		             <li>
+                    <div class="post-date">
+                        <span>Dec 16, 2015</span>
+                    </div>
+                    <div class="title">
+                        <a href="http://antakasa.github.io/dj_city/assets/tube">The elephant in the tube</a>
+                    </div>
+                </li>
 		<li>
+	
 			<div class="post-date">
 				<span>{{ post.date | date: "%b %d, %Y" }}</span>
 			</div>
