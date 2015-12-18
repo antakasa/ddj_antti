@@ -4,8 +4,10 @@ title: About
 
 Hello.
 
-The main purpose of this theme is to be as simple as it could be, so you can focus on writing your stuffs. This is your About page. You may describe about yourself here; who you are, what are you currently doing, share some of your projects, your social links and how people can contact you, etc.
+I am a Finnish masters student stuydying currently in Erasmus Mundus Masters in Journalism. 
 
-**Just write thing that matters..**
+This is a portfolio compiled for London City University's course "Introduction to Data Journalism". The stories introduced here are written solely for the course's purposes. The main aim was to learn some technical skills required to produce advanced data-driven stories from the scratch. 
 
-Enjoy!
+Questions, comments? antti.saarenpaa @ gmail.com 
+
+***Antti Saarenpää***
